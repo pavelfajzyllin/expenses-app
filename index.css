@@ -1,0 +1,294 @@
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.status{
+    color: green;
+
+}
+.status_red{
+    color: red;
+}
+.container{
+    margin: 0 auto;
+    width: 900px;
+    padding-top: 67px;
+}
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+
+    margin-bottom: 41px;
+}
+p,
+h2{
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+span{
+    font-weight: 400;
+}
+.currency{
+    color: red;
+    font-weight: 400;
+}
+
+.expense-input,
+.selector,
+.input_change_limit{
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 484px;
+    height: 58px;
+    margin-bottom: 28px;
+    padding-left: 22px;
+
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.selector{
+    appearance: none;
+    background: url(/in_selector_png.png) no-repeat right;
+    background-position-x: calc(100% - 16px);
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    justify-content: left;
+    gap: 28px;
+}
+.col{
+    position: relative;
+}
+.btn-open-popup{
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    top: -10px;
+    right: 140px;
+}
+
+
+.button-add,
+.btn_change_limit{
+    width: 370px;
+    height: 58px;
+    background: rgb(0, 148, 255);
+    border: none;
+    border-radius: 10px;
+
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    }
+
+.section_input{
+    display: flex;
+    gap: 28px;
+    justify-content: left;
+}
+.expense-input,
+.history{
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.input_selector{
+    display: block;
+    width: 484px;
+
+}
+
+.button-reset{
+    margin-top: 112px;
+    background-color: red;
+    width: 484px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.popup_open{
+    display: flex;
+}
+.popup_content{
+    position: relative;
+    background-color: white;
+    width: 990px;
+    height: 525px;
+    padding-top: 47px;
+    padding-left: 57px;
+    padding-right: 57px;
+
+}
+.popup_title{
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 147px;
+}
+
+.btn_close_popup{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 39px;
+    right: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.input_change{
+    width: 484px;
+    height: 58px;
+    margin-bottom: 20px;
+}
+.rub2::after{
+    position: relative;
+    top: -75px;
+    right: -405px;
+    content: ' руб.';
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0%;
+}
+.expense-input{
+    margin-bottom: 20px;
+}
+.input_money{
+    position: relative;
+    width: 484px;
+    height: 58px;
+    margin-bottom: 20px;
+}
+.rub::after{
+    content: ' руб.';
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0%;
+}
+.rub1::after{
+    position: absolute;
+    content: ' руб.';
+    right: 20px;;
+    top: 10px;
+
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0%;
+}
+.error_text{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 20px;
+}
+.error_text_on{
+    display: block;
+}
+@media (max-width: 1190px){
+
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+    .section_input{
+        display: block;
+    }
+    .button-add,
+    .button-reset{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+
+    }
+    .row{
+        display: block;
+    }
+    .btn-open-popup{
+        right: 100px;
+    }
+    .button-reset{
+        margin-top: 5px;
+    }
+    .expense-input,
+    .input_selector,
+    .input_money,
+    .selector,
+    .input_change,
+    .btn_change_limit{
+        width: 100%;
+    }
+}
+

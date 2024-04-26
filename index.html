@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses App</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Lobster&family=Manrope&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Учет расходов</h1>
+        <div class="section_input">
+            <div class="input_selector">
+                <div class="input_money rub1">
+                <input class="js-expense-input expense-input"
+                type="number" placeholder></div>
+                <select class="js-selector selector">
+                    <option hidden disabled selected value="Категория" >Категория</option>
+                    <option class="js-selector_item selector_item">Кафе и рестораны</option>
+                    <option class="js-selector_item selector_item">Транспорт</option>
+                    <option class="js-selector_item selector_item">Аптека</option>
+                    <option class="js-selector_item selector_item">Развлечения</option>
+                </select>
+            </div>
+            <button class="js-button-add button-add">Добавить</button>
+                    </div>
+        <p class="js-error_text error_text">Пожалуйста, выберите категорию</p>
+        <div class="row">
+            <div class="col">
+                <p><b>Лимит:</b> <span class="js-limit limit rub"></span>  </p>
+                <p><b>Сумма:</b> <span class="js-total rub">0</span></p>
+                <p><b>Статус:</b> <span class="js-status status"></span></p>
+                <button class="js-button-reset button-reset">Сбросить все расходы</button>
+                <button class="btn-open-popup"><img src="/limit_redactor_png.png" alt="Редактировать лимит"></button>
+            </div>
+            <div class="col">
+                <h2><b>История:</b></h2>
+                <div class="js-history history">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-popup popup">
+        <div class="popup_content">
+            <p class="popup_title">Новый лимит</p>
+            <button class="js-btn_close_popup btn_close_popup"><img src="/popup_close.png" alt="Х"></button>
+            <div class="input_change rub2"><input class="js-input_change_limit input_change_limit" type="number" placeholder></div>
+            <button class="js-btn_change_limit btn_change_limit">Задать лимит</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
