@@ -69,7 +69,7 @@ span{
 }
 .selector{
     appearance: none;
-    background: url(/in_selector_png.png) no-repeat right;
+    background: url(in_selector_png.png) no-repeat right;
     background-position-x: calc(100% - 16px);
     cursor: pointer;
 }
