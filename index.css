@@ -291,4 +291,9 @@ span{
         width: 100%;
     }
 }
+@media (max-width: 767px){
+    .btn-open-popup{
+        right: 1px;
+    }
+}
 
